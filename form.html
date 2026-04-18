@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Formulir Pembatalan Pinjaman — Kredione</title>
+  <meta name="description" content="Formulir online untuk mengirim permintaan pembatalan pengajuan pinjaman Kredione." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Kredione</a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="index.html">Beranda</a>
+        <a href="langkah.html">Langkah Pembatalan</a>
+        <a href="form.html">Form Pembatalan</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Kontak</a>
+      </nav>
+      <div class="cta">
+        <a id="headerPhone3" class="btn phone" href="#">087757644038</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Formulir Permintaan Pembatalan</h1>
+    <p class="muted">Isi formulir ini untuk mengajukan pembatalan pengajuan pinjaman Anda. Setelah dikirim, tim kami akan menghubungi Anda untuk verifikasi.</p>
+
+    <form id="cancelForm" class="form-card" novalidate>
+      <label for="name">Nama Lengkap (sesuai KTP)</label>
+      <input id="name" name="name" type="text" required />
+
+      <label for="ktp">Nomor KTP</label>
+      <input id="ktp" name="ktp" type="text" required />
+
+      <label for="application">Nomor Pengajuan (jika ada)</label>
+      <input id="application" name="application" type="text" />
+
+      <label for="phone">Nomor Telepon Aktif</label>
+      <input id="phoneInput" name="phone" type="tel" placeholder="087757644038" required />
+
+      <label for="email">Email</label>
+      <input id="emailInput" name="email" type="email" required />
+
+      <label for="reason">Alasan Pembatalan</label>
+      <textarea id="reason" name="reason" rows="4" required></textarea>
+
+      <label class="checkbox">
+        <input id="consent" name="consent" type="checkbox" required />
+        Saya menyetujui bahwa tim Kredione dapat menghubungi saya untuk verifikasi terkait pembatalan.
+      </label>
+
+      <div class="form-actions">
+        <button type="submit" class="btn primary">Kirim Permintaan</button>
+        <button type="button" id="cancelReset" class="btn ghost">Reset</button>
+      </div>
+
+      <p id="cancelFeedback" class="form-feedback" role="status" aria-live="polite"></p>
+    </form>
+  </main>
+
+  <footer class="site-footer container">
+    <p>© 2025 Kredione — Formulir Pembatalan</p>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+# robots.txt — allow search engines and point to sitemap
+User-agent: *
+Allow: /
+
+Sitemap: https://www.example.com/sitemap.xml
